@@ -1,0 +1,41 @@
+.services-section {
+    position: relative;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    top: -250px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.services-card-wrapper {
+    position: relative;
+    width: 60%;
+    padding: 3px;
+    border-radius: 0 15px 0 15px;
+    background: linear-gradient(45deg, #ff5733, #33c1ff, #ffcc00);
+}
+
+.services-card {
+    background-color: lightgray;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0 15px 0 15px;
+    width: 100%;
+    padding: 30px;
+    text-align: left;
+    z-index: 2;
+}
+
+.services-card h2 {
+    font-size: 8rem;
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.services-card p {
+    font-size: 2rem;
+    color: blue;
+    pointer-events: none;
+}

@@ -1,0 +1,117 @@
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem auto;
+    padding: 1rem;
+    margin-top: -300px;
+    max-width: 1200px;
+}
+
+.service-card {
+    width: 30%;
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 2rem;
+}
+
+.service-card .line {
+    width: 4px;
+    height: 50px;
+    background-color: #333;
+    margin-left: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card h3 {
+    font-size: 1.8rem; /* Slightly larger for emphasis */
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold; /* Match the bold style */
+}
+
+.service-card p {
+    margin: 0.5rem 0;
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.6; /* Improve readability */
+}
+
+.service-card ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    padding-left: 0;
+}
+
+.service-card ul li {
+    margin-bottom: 5px;
+    color: #777;
+    font-size: 1rem; /* Slightly smaller */
+}
+
+.learn-more {
+    border: none;
+    background: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.learn-more .arrow-icon {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.learn-more:hover .arrow-icon {
+    transform: rotate(360deg);
+}
+
+.learn-more:hover::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    width: 20px;
+    height: 20px;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.service-card:hover h3,
+.service-card:hover .line {
+    transform: translateX(10px);
+}
+
+.service-0 {
+    margin-top: 0;
+}
+
+.service-1 {
+    margin-top: 5rem;
+}
+
+.service-2 {
+    margin-top: 10rem;
+}
+
+.service-3 {
+    margin-top: 0;
+}
+
+.service-4 {
+    margin-top: 5rem;
+}
+
+.service-5 {
+    margin-top: 10rem;
+}

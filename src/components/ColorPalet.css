@@ -1,0 +1,68 @@
+
+.color-rectangles {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin: 2rem 0;
+    gap: 0;
+}
+
+
+.rectangle {
+    flex: 1;
+    height: 20rem;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0;
+}
+
+
+.rectangle.red::before {
+    background-color: #e74c3c;
+}
+.rectangle.yellow::before {
+    background-color: #f1c40f;
+}
+.rectangle.blue::before {
+    background-color: #3498db;
+}
+.rectangle.green::before {
+    background-color: #2ecc71;
+}
+.rectangle.purple::before {
+    background-color: #9b59b6;
+}
+.rectangle.cyan::before {
+    background-color: #1abc9c;
+}
+
+
+.rectangle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    transition: height 0.5s ease;
+}
+
+
+.rectangle:hover::before {
+    height: 20rem; 
+}
+
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+    pointer-events: none;
+}

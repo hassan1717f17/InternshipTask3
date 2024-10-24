@@ -1,0 +1,59 @@
+.header{
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.color-block{
+    flex: 1;
+    height: 100%;
+    transition: flex 0.5s ease;
+}
+
+.color-block:hover{
+    flex: 3;
+}
+
+.block1{
+    background-color: purple;
+}
+
+.block2{
+    background-color: lightblue;
+}
+
+.block3{
+    background-color: red;
+}
+
+.block4{
+    background-color: yellow;
+
+}
+
+.block5{
+    background-color: lightblue;
+}
+
+.block6{
+    background-color: purple;
+    
+}
+.header-content{
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.header-content h1{
+    font-size: 15rem;
+    color: transparent;
+        -webkit-text-stroke: 6px white;
+    font-weight: bold;
+    text-align: center;
+    
+}
